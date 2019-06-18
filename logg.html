@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><title>
+    تسجيل الدخول
+</title><link href="s1.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" href="images/ksu.png" /></head>
+
+
+
+<body>
+    <form method="post" action="./Login.aspx?ReturnUrl=%2f" onsubmit="javascript:return WebForm_OnSubmit();" id="frmLogin">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="tuufINZe6HjNXi/Rk9uBxobD31dVnR+oQeSdER91wrFrx6MPaHn+R3Xd263/47DeC7bBwNLudRwXXTUqRHSgGn6RejuX+a5j50fDu7pMTj4=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmLogin'];
+if (!theForm) {
+    theForm = document.frmLogin;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZNpxf5jHJ_yyoi2Y65uix3WWb2ucGV0KLZjFWO-DBHMcv-mVzS2AUJXf_xsgblIHfA2&amp;t=636767716042202005" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=x2nkrMJGXkMELz33nwnakBLNMzXVB-Tu6R84GzUo5zksHUMWitYFS7W2vI3oJaHXgud1AbUxhzxNWhaPNjs4J2f75ACLkbVAZ9LHMoxzqUY1&amp;t=636767716042202005" type="text/javascript"></script>
+<script src="/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYqShpcBYHTI3IWMBRCkDw8ZvpHCP4C7MC2-iQXlVzSxmWYVL_G1Ks3er9QBSrN82Dg2&amp;t=636767716042202005" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="O0Ogl57c0LbnF9TcBZD/2QvuZ4uwWkrA+u6kK4LdRtQkFI9lj7hxCO3je42o3ZMYE0NVsBJ2AL1Q0I7M8ihCMg4angKpWCSPDobxAa3P+NvrUBH76ymqpqKeXcaRImTyolY0G0S0hO8lehRE+4y3ZrwXsMjef9PDlGo4tCFEIro=" />
+</div>
+        <table id="lginLogin" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+    <tr>
+        <td>
+                <div class="login">
+                    <div>
+                        <div class="login_logo"><img alt="" src="images/login_logo.png" /></div>
+                        <div class="line"></div>
+                        
+
+
+
+                        <input name="lginLogin$UserName" type="text" id="lginLogin_UserName" class="username" placeholder="اسم المستخدم" />
+                        <span id="lginLogin_UserNameRequired" title="اسم المستخدم مطلوب" style="color:Red;display:none;">يجب إدخال اسم المستخدم</span>
+                        <input name="lginLogin$Password" type="password" id="lginLogin_Password" class="password" placeholder="كلمة المرور" />
+                        <span id="lginLogin_PasswordRequired" title="كلمة المرور مطلوبة" style="color:Red;display:none;">يجب إدخال كلمة المرور<br/></span>
+                        <input type="submit" name="lginLogin$LoginButton" value="تسجيل الدخول" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;lginLogin$LoginButton&quot;, &quot;&quot;, true, &quot;Login1&quot;, &quot;&quot;, false, false))" id="lginLogin_LoginButton" class="login_btn" />
+                    </div>
+                </div>
+            </td>
+    </tr>
+</table>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("lginLogin_UserNameRequired"), document.getElementById("lginLogin_PasswordRequired"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var lginLogin_UserNameRequired = document.all ? document.all["lginLogin_UserNameRequired"] : document.getElementById("lginLogin_UserNameRequired");
+lginLogin_UserNameRequired.controltovalidate = "lginLogin_UserName";
+lginLogin_UserNameRequired.focusOnError = "t";
+lginLogin_UserNameRequired.errormessage = "يجب إدخال اسم المستخدم";
+lginLogin_UserNameRequired.display = "Dynamic";
+lginLogin_UserNameRequired.validationGroup = "Login1";
+lginLogin_UserNameRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+lginLogin_UserNameRequired.initialvalue = "";
+var lginLogin_PasswordRequired = document.all ? document.all["lginLogin_PasswordRequired"] : document.getElementById("lginLogin_PasswordRequired");
+lginLogin_PasswordRequired.controltovalidate = "lginLogin_Password";
+lginLogin_PasswordRequired.focusOnError = "t";
+lginLogin_PasswordRequired.errormessage = "يجب إدخال كلمة المرور<br/>";
+lginLogin_PasswordRequired.display = "Dynamic";
+lginLogin_PasswordRequired.validationGroup = "Login1";
+lginLogin_PasswordRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+lginLogin_PasswordRequired.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('lginLogin_UserName');//]]>
+</script>
+</form>
+</body>
+</html>
