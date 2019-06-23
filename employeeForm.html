@@ -1,0 +1,256 @@
+<!-- the NewContact Screen -->
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/ksu.png" />
+<style>
+i {
+  font-size: 24px;
+  color:red;
+}
+body {
+    background-color:#DCDCDC;
+    text-align: center
+}
+.styles
+{
+display: inline-block;
+background-color:white;
+  padding: 70px;
+  border-radius: 25px;
+
+}
+input[type=button], .like ,button{
+	background-color:#DCDCDC;
+	  padding: 12px 28px;
+	    text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+</style>
+
+<SCRIPT language="javascript">
+    function addRow(tableID) {
+
+      var table = document.getElementById(tableID);
+
+      var rowCount = table.rows.length;
+      var row = table.insertRow(rowCount);
+
+      var cell1 = row.insertCell(0);
+      var element1 = document.createElement("input");
+      element1.type = "text";
+      element1.name="txtbox[]";
+      cell1.appendChild(element1);
+
+     var cell2 = row.insertCell(1);
+     // cell2.innerHTML = rowCount + 1;
+
+      var cell3 = row.insertCell(2);
+      var element2 = document.createElement("input");
+      element2.type = "text";
+      element2.name = "txtbox[]";
+      cell3.appendChild(element2);
+
+       var cell4 = row.insertCell(3);
+      var element3 = document.createElement("input");
+      element3.type = "text";
+      element3.name = "txtbox[]";
+      cell4.appendChild(element3);
+
+           var cell5 = row.insertCell(4);
+      var element4 = document.createElement("i");
+      var att = document.createAttribute("class");       // Create a "class" attribute
+att.value = "fa fa-close"; 
+element4.setAttributeNode(att);  
+      cell5.appendChild(element4);
+
+
+
+
+           var cell6 = row.insertCell(5);
+      var element5 = document.createElement("input");
+    element5.type = "button";
+    element5.value = "تعديل";
+
+      cell6.appendChild(element5);
+
+    }
+
+  </SCRIPT>
+<title>تقديم طلب جديد</title>
+<style>
+.max
+{
+
+  width:20%;
+  height: :20%;
+
+}
+select {
+  width:50%;
+}
+</style>
+
+
+
+</head>
+
+
+
+<body dir="rtl">
+<div class="styles">
+  <h2>نموذج تقديم طلب نقل جديد</h2>
+<form><br/><br/><br/><br/>
+
+<table width="800">
+
+  <tr>
+    <td>اسم الموظفة </td>
+
+    <td><input type="text" name="firstname" /></td>
+ <td>الرقم الوظيفي</td>
+
+    <td><input type="text" name="firstname" /></td>
+  </tr>
+
+  <tr>
+    <td>المسمى الوظيفي </td>
+    <td><input type="text" name="firstname" /></td>
+ <td>سنة التعيين</td>
+    <td><input type="text" name="firstname" /></td>
+  </tr>
+
+  <tr>
+    <td>طبيعة العمل الفعلي </td>
+    <td><input type="text" name="firstname" /></td>
+ <td>المرتبة</td>
+    <td><input type="text" name="firstname" /></td>
+  </tr>
+
+
+  <tr>
+    <td>التخصص </td>
+    <td><input type="text" name="firstname" /></td>
+ <td>المؤهل الدراسي</td>
+    <td><input type="text" name="firstname" /></td>
+  </tr>
+
+<tr>
+    <td>البريد الالكتروني </td>
+    <td><input type="text" name="firstname" /></td>
+ <td>هاتف المكتب</td>
+    <td><input type="text" name="firstname" /></td>
+  </tr>
+
+<tr>
+    <td>رقم الجوال </td>
+    <td><input type="text" name="firstname" /></td>
+
+  </tr>
+
+<tr>
+    <td>السيرة الذاتية </td>
+<td><input type="file" id="myFile" class="like"></td>
+  </tr>
+  <tr>
+
+</table>
+<h3 style="text-align:right">جهات العمل خلال السنوات الخمس الماضية بدءاً بجهة العمل الحالية :</h3>
+
+<table width="1000">
+<tr>
+  <td>
+      <label>جهة العمل</label>
+<select>
+  <option>
+  </option>
+</select>
+</td>
+
+<td>
+   <label>من</label>
+ </td>
+<td>
+  <input type="date"/>
+</td>
+
+<td>
+   <label>إلى</label>
+ </td>
+<td>
+  <input type="date"/>
+</td>
+</tr>
+<tr>
+  <td>
+      <label style="margin-left:24px">القسم</label>
+<select>
+  <option>
+  </option>
+</select>
+</td></tr>
+<tr></tr>
+
+</form>
+
+<table>
+  <tr><td><INPUT type="button" value="إضافة جهة عمل" onclick="addRow('dataTable')" class="like"/></td></br>
+</table></br>
+  <TABLE id="dataTable" width="350px" border="1">
+   <tr><td>جهة العمل</td>
+    <td>القسم</td>
+    <td>من</td>
+    <td>إلى</td>
+    <td></td>
+    <td></td>
+  </tr>
+    <TR>
+   
+      <TD> <INPUT type="text" /> </TD>
+            <TD> <INPUT type="text" /> </TD>
+      <TD> <INPUT type="text" /> </TD>
+      <TD> <INPUT type="text" /9> </TD>
+     <td> <i class="fa fa-close"></i></td>
+<td><button>تعديل</button>
+    </TR>
+  </TABLE>
+</br>
+<table>
+  <tr>
+    <td><h3>الجهة المطلوب الانتقال اليها</h3></td></tr>
+  <tr>
+<td><label>جهة العمل</label></td>
+<td><select>
+  <option></option>
+</select>
+</td>
+<td><label>القسم</label></td>
+<td><select>
+  <option></option>
+</select>
+</td>
+</tr>
+
+</table>
+<br>
+<p style="text-align:right">مبررات نقل الموظفة</p>
+
+ <p align="right" ><textarea align="right" rows="6" cols="70" name="comment" form="usrform">
+Enter text here...</textarea></p>
+<br>
+
+  <p align="right"><input type="checkbox" name="vehicle1" value="Bike"> أقر بصحة البيانات المضافة</p>
+<table>
+  <tr>
+    <td><button>حفظ</button></td>
+    <td><button>إرسال</button></td>
+    <td><button>إلغاء</button></td>
+</tr>
+</table>
+</div>
+
+</body>
+
+</html>
